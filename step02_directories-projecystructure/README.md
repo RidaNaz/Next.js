@@ -87,7 +87,7 @@ Create a public folder to store static assets such as images, fonts, etc. Files 
 
 Next.js is a framework built on top of React.js, designed to facilitate server-side rendering and static site generation. It's known for its 'convention over configuration'. Here's a typical Next.js folder structure:
 
-**pages/:**  *The heart of a Next.js application. Each JavaScript file under this directory becomes a route based on its file name. Example: pages/index.js is the entry point (home page), and pages/about.js would correspond to the /about route.*
+- **pages/:**  *The heart of a Next.js application. Each JavaScript file under this directory becomes a route based on its file name. Example: pages/index.js is the entry point (home page), and pages/about.js would correspond to the /about route.*
 
 - **public/:**  *This directory holds static files like images, fonts, and other assets. You can reference these files in your code starting from the base URL of your site.*
 
