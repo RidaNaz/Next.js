@@ -71,8 +71,21 @@ These scripts refer to the different stages of developing an application:
 - **start:**  runs next start to start a Next.js production server.
 - **lint:**  runs next lint to set up Next.js' built-in ESLint configuration.
 
-## Run the Development Server
-* Run npm run dev to start the development server.
+# Exploring the Project
+After installation, open the project in your code editor and navigate to nextjs-dashboard.
+
+> Command Prompt (cmd)
+```
+cd nextjs-dashboard
+```
+
+# Run the Development Server
+* Run the following command in terminal to start the development server.
+
+> Command Prompt (cmd)
+```bash
+npm run dev
+```
 
 * Visit http://localhost:3000 to view your application.
 
