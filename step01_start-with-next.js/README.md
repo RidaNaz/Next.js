@@ -72,7 +72,7 @@ These scripts refer to the different stages of developing an application:
 - **lint:**  runs next lint to set up Next.js' built-in ESLint configuration.
 
 # Exploring the Project
-After installation, open the project in your code editor and navigate to nextjs-dashboard.
+After installation, open the project in your code editor and navigate to `nextjs-dashboard`.
 
 > Command Prompt (cmd)
 ```
@@ -89,4 +89,4 @@ npm run dev
 
 * Visit http://localhost:3000 to view your application.
 
-* Edit app/page.tsx (or pages/index.tsx) file and save it to see the updated result in your browser.
+* Edit `app/page.tsx` (or `pages/index.tsx`) file and save it to see the updated result in your browser.
