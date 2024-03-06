@@ -1,5 +1,5 @@
 # Creating directories
-Next.js uses file-system routing, which means the routes in your application are determined by how you structure your files.
+Next.js uses file-system routing, which means the routes in your application are determined by how you structure your files. In Next.js 14, you have two primary options for structuring your application's routes and components:
 
 ## The app directory
 App router allows you to use React's latest features and is an evolution of the Pages Router.
@@ -7,7 +7,7 @@ Create an app/ folder, then add a layout.tsx and page.tsx file. These will be re
 
 ![App Screenshot](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Fapp-getting-started.png&w=1920&q=75&dpl=dpl_E8WJxq5FBaMW27AJwimbfp1c4j61)
 
-* Create a root layout inside app/layout.tsx with the required <html> and <body> tags:
+* Create a root layout inside `app/layout.tsx` with the required <html> and <body> tags:
 
 > app/layout.tsx
 ```typescript
@@ -24,7 +24,7 @@ Create an app/ folder, then add a layout.tsx and page.tsx file. These will be re
 }
 ```
 
-* Finally, create a home page app/page.tsx with some initial content:
+* Finally, create a home page `app/page.tsx` with some initial content:
 
 > app/page.tsx
 ```typescript
@@ -33,12 +33,12 @@ Create an app/ folder, then add a layout.tsx and page.tsx file. These will be re
 }
 ```
 ### Note:
-If you forget to create layout.tsx, Next.js will automatically create this file when running the development server with next dev.
+If you forget to create `layout.tsx`, Next.js will automatically create this file when running the development server with next dev.
 
 ## The pages directory (optional)
-If you prefer to use the Pages Router instead of the App Router, you can create a pages/ directory at the root of your project.
+If you prefer to use the Pages Router instead of the App Router, you can create a `pages/` directory at the root of your project.
 
-* Then, add an index.tsx file inside your pages folder. This will be your home page (/):
+* Then, add an `index.tsx` file inside your pages folder. This will be your home page (/):
 
 > pages/index.tsx
 ```typescript
@@ -47,7 +47,7 @@ If you prefer to use the Pages Router instead of the App Router, you can create 
 }
 ```
 
-* Next, add an _app.tsx file inside pages/ to define the global layout.
+* Next, add an `_app.tsx` file inside `pages/` to define the global layout.
 
 > pages/_app.tsx
 ```typescript
@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 ```
 
-* Finally, add a _document.tsx file inside pages/ to control the initial response from the server.
+* Finally, add a `_document.tsx` file inside `pages/` to control the initial response from the server.
 
 > pages/_document.tsx
 ```typescript
@@ -87,7 +87,7 @@ Create a public folder to store static assets such as images, fonts, etc. Files 
 
 Next.js is a framework built on top of React.js, designed to facilitate server-side rendering and static site generation. It's known for its 'convention over configuration'. Here's a typical Next.js folder structure:
 
-- **pages/:**  *The heart of a Next.js application. Each JavaScript file under this directory becomes a route based on its file name. Example: pages/index.js is the entry point (home page), and pages/about.js would correspond to the /about route.*
+- **pages/:**  *The heart of a Next.js application. Each TypeScript file under this directory becomes a route based on its file name. Example: pages/index.ts is the entry point (home page), and pages/about.ts would correspond to the /about route.*
 
 - **public/:**  *This directory holds static files like images, fonts, and other assets. You can reference these files in your code starting from the base URL of your site.*
 
