@@ -37,10 +37,10 @@ export default function RootLayout({
 Tailwind is a CSS framework that speeds up the development process by allowing you to quickly write utility classes directly in your TSX markup.
 When you use `create-next-app` to start a new project, Next.js will ask if you want to use `Tailwind`. If you select `yes`, Next.js will automatically install the necessary packages and configure Tailwind in your application.
 
-In Tailwind, you style elements by adding class names. For example, adding the class "text-blue-500" will turn the <h1> text blue:
+In Tailwind, you style elements by adding class names. For example, adding the class "text-blue-500" will turn the <div> text blue:
 > example
 ```css
-<h1 className="text-blue-500">I'm blue!</h1>
+<div className="text-blue-500">I'm blue!</div>
 ```
 
 ## CSS modules
