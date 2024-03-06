@@ -57,7 +57,7 @@ However, this means you have to manually:
 - Prevent layout shift as the images load.
 - Lazy load images that are outside the user's viewport.
 
-### The <Image> component
+### The `<Image>` component
 The `<Image>` Component is an extension of the HTML `<img>` tag, and comes with automatic image optimization, such as:
 
 - Preventing layout shift automatically when images are loading.

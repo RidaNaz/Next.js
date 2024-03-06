@@ -92,7 +92,7 @@ export default function InvoiceStatus({ status }: { status: string }) {
 ```
 
 ## Other styling solutions
-In addition to the approaches we've discussed, you can also style your Next.js application with:
+In addition to the approaches I've discussed, you can also style your Next.js application with:
 
 * Sass which allows you to import `.css` and `.scss` files.
 * CSS-in-JS libraries such as styled-jsx, styled-components, and emotion.
