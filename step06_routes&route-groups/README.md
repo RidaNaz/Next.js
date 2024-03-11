@@ -32,10 +32,27 @@ Next.js uses a file-system based router where folders are used to define routes.
 Each folder represents a route segment that maps to a URL segment. To create a nested route, you can nest folders inside each other.
 ![App Screenshot](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Froute-segments-to-path-segments.png&w=1920&q=75&dpl=dpl_DCtH3CdUprp1CVB8tivKY8y2wMuB)
 
-A [special `page.ts`](https://nextjs.org/docs/app/building-your-application/routing#file-conventions) file is used to make route segments publicly accessible.
+A [special file](https://nextjs.org/docs/app/building-your-application/routing#file-conventions) `page.js`is used to make route segments publicly accessible.
 ![App Screenshot](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Fdefining-routes.png&w=1920&q=75&dpl=dpl_DCtH3CdUprp1CVB8tivKY8y2wMuB)
 
 In this example, the` /dashboard/analytics` URL path is not publicly accessible because it does not have a corresponding page.js file. This folder could be used to store components, stylesheets, images, or other colocated files.
 
 ### Note:
-.js, .jsx, or .tsx file extensions can be used for special files.
+`.js`, `.jsx`, or `.tsx` file extensions can be used for special files.
+
+# Route Groups
+In the `app` directory, nested folders are normally mapped to URL paths. However, you can mark a folder as a Route Group to prevent the folder from being included in the route's URL path.
+
+This allows you to organize your route segments and project files into logical groups without affecting the URL path structure.
+
+Route groups are useful for:
+
+Organizing routes into groups e.g. by site section, intent, or team.
+Enabling nested layouts in the same route segment level:
+Creating multiple nested layouts in the same segment, including multiple root layouts
+Adding a layout to a subset of routes in a common segment
+
+### Convention
+A route group can be created by wrapping a folder's name in parenthesis: `(folderName)`
+
+### [Example](https://nextjs.org/docs/app/building-your-application/routing/route-groups#organize-routes-without-affecting-the-url-path)
