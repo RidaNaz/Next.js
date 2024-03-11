@@ -11,6 +11,8 @@ Add global styles to your application by navigating to `/app/layout.tsx` and imp
 
 > /app/layout.tsx
 ```typescript
+import "@/app/global.css";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -87,7 +89,6 @@ export default function InvoiceStatus({ status }: { status: string }) {
         },
       )}
     />
-    // ...
 )}
 ```
 

@@ -107,4 +107,3 @@ Once you're ready, expand the code snippet below to see the solution.
         alt="Screenshot of the dashboard project showing mobile version"
       />
 ```
-
