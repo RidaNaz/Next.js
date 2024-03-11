@@ -31,4 +31,4 @@ Client component can make with `use client` directive.Primarily handle rendering
 - Components heavily reliant on user interaction.
 - Situations where dynamic client-side logic is essential.
 
-<img classname="alighn-center" src="/step05_components/public/Screenshot.jpg" >
+<img src="/step05_components/public/Screenshot.jpg" >
