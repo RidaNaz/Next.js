@@ -13,7 +13,7 @@ There are four ways to navigate between routes in Next.js:
 You can use it by importing it from `next/link`, and passing a `href` prop to the component.
 
 ## Examples
-### Linking to Dynamic Segments
+* ### Linking to Dynamic Segments
 When linking to *dynamic segments*, you can use **template literals and interpolation** to generate a list of links. For example, to generate a list of blog posts:
 
 > app/blog/PostList.js
@@ -33,9 +33,9 @@ export default function PostList({ posts }) {
 }
 ```
 
-### [Checking Active Links](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#checking-active-links)
-### [Scrolling to an id](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#scrolling-to-an-id)
-### [Disabling scroll restoration](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#disabling-scroll-restoration)
+* ### [Checking Active Links](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#checking-active-links)
+* ### [Scrolling to an id](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#scrolling-to-an-id)
+* ### [Disabling scroll restoration](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#disabling-scroll-restoration)
 
 # `useRouter()` hook
 The `useRouter` hook allows you to programmatically change routes from Client Components.

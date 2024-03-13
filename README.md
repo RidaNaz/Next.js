@@ -1,6 +1,6 @@
 <Image src="./mylogo/Ridalogo.svg" alt="logo" width="50" height="50" align="left"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&weight=500&size=25&duration=4000&pause=500&color=a51d90&center=true&vCenter=true&width=665&height=55&lines=%E2%9C%A8Hey%2C+I'm+Rida+Naz%E2%9C%A8;%E2%9C%A8Start+Next.js%E2%9C%A8;%E2%9C%A8Follow+my+GitHub+a+Profile%E2%9C%A8)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+Slab&weight=500&size=25&duration=4000&pause=500&color=a51d90&center=true&vCenter=true&width=665&height=55&lines=%E2%9C%A8Hey%2C+I'm+Rida+Naz%E2%9C%A8;%E2%9C%A8Start+Next.js+with+me%E2%9C%A8;%E2%9C%A8Follow+my+GitHub+a+Profile%E2%9C%A8)](https://git.io/typing-svg)
     
 <h2>About Me</h2>
 
