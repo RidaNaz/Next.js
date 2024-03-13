@@ -16,8 +16,15 @@ export default function Page({ params }: { params: { slug: string } }) {
 }
 ```
 
-Route            	    | Example URL | params
-| :-------------------- | :---------- | :----------- |
-app/blog/[slug]/page.js	| /blog/a     |	{ slug: 'a' }
-app/blog/[slug]/page.js	| /blog/b     |	{ slug: 'b' }
-app/blog/[slug]/page.js	| /blog/c     |	{ slug: 'c' }
+Route            	         |Example URL      |    params     
+| :------------------------- | :-------------- | :------------------ |
+app/blog/[slug]/page.js	     |     /blog/a     |	{ slug: 'a'      }
+app/blog/[slug]/page.js	     |     /blog/b     |	{ slug: 'b'      }
+app/blog/[slug]/page.js	     |     /blog/c     |	{ slug: 'c'      }
+
+### Note:
+Good to know: Dynamic Segments are equivalent to Dynamic Routes in the `pages` directory.
+
+### [Generating Static Params](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params)
+### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
+### [Optional Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
