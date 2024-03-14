@@ -23,7 +23,7 @@ app/blog/[slug]/page.js	     |     /blog/b     |	{ slug: 'b'      }
 app/blog/[slug]/page.js	     |     /blog/c     |	{ slug: 'c'      }
 
 ### Note:
-Good to know: Dynamic Segments are equivalent to Dynamic Routes in the `pages` directory.
+Dynamic Segments are equivalent to Dynamic Routes in the `pages` directory.
 
 ### [Generating Static Params](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params)
 ### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)

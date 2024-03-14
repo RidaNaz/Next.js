@@ -12,6 +12,8 @@ There are four ways to navigate between routes in Next.js:
 `<Link>` is a built-in component that extends the HTML `<a>` tag to provide prefetching and client-side navigation between routes. It is the primary and recommended way to navigate between routes in Next.js.
 You can use it by importing it from `next/link`, and passing a `href` prop to the component.
 
+Here's a [summary of the props](https://nextjs.org/docs/app/api-reference/components/link#props) for the Link Component.
+
 ## Examples
 * ### Linking to Dynamic Segments
 When linking to *dynamic segments*, you can use **template literals and interpolation** to generate a list of links. For example, to generate a list of blog posts:

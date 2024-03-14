@@ -107,3 +107,4 @@ Once you're ready, expand the code snippet below to see the solution.
         alt="Screenshot of the dashboard project showing mobile version"
       />
 ```
+Here's a [summary of the props](https://nextjs.org/docs/app/api-reference/components/image#props) for the Image Component.
