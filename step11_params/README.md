@@ -3,16 +3,16 @@ In Next.js, parameters (often referred to as `params`) are used in dynamic route
 
 Here's a breakdown of how `params` work in Next.js 14:
 
-* # Dynamic Routes:
+# 1. Dynamic Routes:
 
 - When you don't know the exact name of a segment in a URL path beforehand, you can use dynamic segments wrapped in square brackets `[]`. These segments become placeholders for capturing values from the URL.
 - Example: `pages/blog/[slug].js` represents a dynamic route where `[slug]` captures a specific blog post slug (e.g., `/blog/my-awesome-post`).
 
-* # Accessing Params:
+# 2. Accessing Params:
 
 You can access the captured value(s) of dynamic segments using two main approaches:
 
-   * ## `useParams` Hook (Client-side):
+* ## `useParams` Hook (Client-side):
 
 This hook, imported from `next/router`, allows you to access captured `params` within client-side components (functional components).
 
@@ -27,7 +27,7 @@ function BlogPost({ slug }) {
 }
 ```
 
-   * ## Filename-based Access (Server-side):
+* ## Filename-based Access (Server-side):
 
 If you're using data fetching functions like `getStaticProps` or `getServerSideProps`, you can directly access the captured `params` from the function arguments:
 
