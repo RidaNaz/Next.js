@@ -3,7 +3,7 @@ Props is a special keyword in React that stands for properties and is used for p
 
 There are three steps for using `props`:
 
-## * Define an attribute and its value in Parent Component.
+* ## Define an attribute and its value in Parent Component.
 let's create a parent component that will pass props to its child component.
 
 ```typescript
@@ -25,7 +25,7 @@ export default ParentComponent;
 
 ```
 
-## * Pass it to the child component(s) by using props.
+* ## Pass it to the child component(s) by using props.
 Now, let's create a child component that will receive props from its parent component.
 
 ```typescript
@@ -44,7 +44,7 @@ export default ChildComponent;
 
 ```
 
-## * Render the props data.
+* ## Render the props data.
 Finally, let's use these components in a Next.js page.
 
 ```typescript
@@ -64,5 +64,9 @@ const HomePage = () => {
 export default HomePage;
 ```
 - The `ParentComponent` passes a message `prop` to the `ChildComponent`.
-- The `ChildComponent` receives the message `prop` and renders it within a paragraph (<p>).
+- The `ChildComponent` receives the message `prop` and renders it within a paragraph `<p>`.
 - In the HomePage (a page component), we import and use the `ParentComponent`.
+
+
+### Note:
+Whenever you use `JavaScript/TypeScript` in `HTML` tags wrap it in `{}`.
