@@ -40,3 +40,5 @@ The `error.tsx` file convention allows you to gracefully handle unexpected runti
 
 Create error UI by adding an `error.tsx` file inside a route segment and exporting a React component:
 ![App Screenshot](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Ferror-special-file.png&w=1920&q=75&dpl=dpl_BrWHktfCYgUy6M9aopD3zYm4mMTM)
+
+Handling Errors in [Layouts](https://nextjs.org/docs/app/building-your-application/routing/error-handling#handling-errors-in-layouts), [Root Layouts](https://nextjs.org/docs/app/building-your-application/routing/error-handling#handling-errors-in-root-layouts), [Server Errors](https://nextjs.org/docs/app/building-your-application/routing/error-handling#handling-server-errors).
