@@ -16,7 +16,7 @@ There are 3 rules for hooks:
 
 ## Built-in React Hooks
 
-### [State Hooks](./hook01_usestate/README.md)
+### [State Hooks](./hooks01_usestate/README.md)
 To add state to a component, use one of these Hooks:
 
 * `useState` declares a state variable that you can update directly.
