@@ -1,6 +1,8 @@
 # Props
 Props is a special keyword in React that stands for properties and is used for passing data from one component to another. Props act as a mechanism for passing data (information) from **parent components** to their **child components**. They allow you to customize the **behavior** and **appearance** of child components based on the data provided by the parent component.
 
+**React Props are like function arguments in JavaScript and attributes in HTML.**
+
 There are three steps for using `props`:
 
 * ## Define an attribute and its value in Parent Component.

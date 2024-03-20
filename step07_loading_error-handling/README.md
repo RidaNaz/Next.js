@@ -9,6 +9,7 @@ Within the directory of a route, create a file named `loading.tsx`.
 ## 2. Implement Loading State:
 This file should export a React component that defines your loading UI. It can be a *simple spinner, text message, or a placeholder element* to indicate that content is being loaded.
 
+> app/dashboard/loading.tsx
 ```typescript
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
