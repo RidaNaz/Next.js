@@ -21,7 +21,7 @@ We initialize our state by calling `useState` in our function component.
 * The current state.
 * A function that updates the state.
 
-I> nitialize state at the top of the function component.
+> Initialize state at the top of the function component.
 ```typescript
 import { useState } from "react";
 
@@ -32,10 +32,8 @@ function FavoriteColor() {
 #### Note:
 
 - we are destructuring the returned values from `useState`.
-
 - The first value, color, is our *current state*.
-
 - The second value, setColor, is the *function* that is used to *update our state*.
-
 - These *names are variables* that can be named anything you would like.
 
+[see code](/step14_hooks/hooks01_usestate/src/app/MyComponent.tsx)
