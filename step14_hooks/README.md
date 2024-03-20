@@ -29,7 +29,7 @@ To add state to a component, use one of these Hooks:
 * `useRef` declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node.
 * `useImperativeHandle` lets you customize the ref exposed by your component. This is rarely used.
 
-### Effect Hooks
+### [Effect Hooks](./hooks02_useeffect/README.md)
 * `useEffect` connects a component to an external system.
 There are two rarely used variations of `useEffect` with differences in timing:
 
