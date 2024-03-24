@@ -28,3 +28,5 @@ Dynamic Segments are equivalent to Dynamic Routes in the `pages` directory.
 ### [Generating Static Params](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params)
 ### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
 ### [Optional Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
+
+[useParams Hook](/step12_params/README.md#useparams-hook-client-side)
