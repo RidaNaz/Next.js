@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
 }
 ```
 
-Route            	         |Example URL      |    params     
+Route            	           |  Example URL    |    params     
 | :------------------------- | :-------------- | :------------------ |
 app/blog/[slug]/page.js	     |     /blog/a     |	{ slug: 'a'      }
 app/blog/[slug]/page.js	     |     /blog/b     |	{ slug: 'b'      }
@@ -25,8 +25,15 @@ app/blog/[slug]/page.js	     |     /blog/c     |	{ slug: 'c'      }
 ### Note:
 Dynamic Segments are equivalent to Dynamic Routes in the `pages` directory.
 
-### [Generating Static Params](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params)
-### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
-### [Optional Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
+#### [Generating Static Params](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params)
+#### [Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
+#### [Optional Catch-all Segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
 
-[useParams Hook](/step12_params/README.md#2-accessing-params)
+
+# Dynamic Page Creation
+In Next.js 14, a dynamic page refers to a web page that can *render different content based on the URL*. This allows you to create flexible and reusable components that adapt to the specific information requested by the user. Next.js offers two primary approaches to achieve dynamic page generation:
+
+* [Dynamic Routing with useParams](/step12_params/README.md#useparams-hook-client-side)
+* [API Routes with Data Fetching](/step12_params/README.md#filename-based-access-server-side)
+
+[see dynamic page code](/step10_dynamic-routes_page/src/app/products/[product]/page.tsx)

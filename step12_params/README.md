@@ -16,7 +16,7 @@ Here's a breakdown of how `params` work in Next.js 14:
 
 You can access the captured value(s) of dynamic segments using two main approaches:
 
-## * `useParams` Hook (Client-side):
+* ## `useParams` Hook (Client-side):
 
 This hook, imported from `next/router`, allows you to access captured `params` within client-side components (functional components).
 
