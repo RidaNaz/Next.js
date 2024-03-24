@@ -4,6 +4,7 @@ This involves generating HTML, CSS, and JavaScript files that define the structu
 
 # Rendering Environments
 There are two environments where web applications can be rendered:
+
 **Client**
 The client refers to the browser on a user's device that sends a request to a server for your application code. It then turns the response from the server into a user interface.
 
