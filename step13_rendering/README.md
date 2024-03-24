@@ -58,3 +58,14 @@ You can start streaming route segments using `loading.tsx` and UI components wit
 Partial Prerendering is an experimental feature that allows static portions of a route to be prerendered and served from the cache with dynamic holes streamed in, all in a single HTTP request.
 
 **Warning:** Partial Prerendering is an experimental feature and is currently not suitable for production environments.
+
+### Conditional Rendering
+Conditional rendering allows you to control which UI elements are displayed based on certain conditions. This functionality is crucial for building dynamic and interactive user interfaces that adapt to user interactions or application state. Here are the common approaches to achieve conditional rendering in Next.js 14:
+
+* Using JavaScript Expressions.
+* Using Ternary Operator.
+* Logical AND Operator (&&).
+* Short-circuiting with Nullish Coalescing Operator (??).
+* Conditional Rendering with Hooks
+
+[see code](/step14_hooks/hooks01_usestate/src/app/page.tsx)

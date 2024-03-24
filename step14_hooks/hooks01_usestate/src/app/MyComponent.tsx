@@ -1,6 +1,7 @@
-// useState hooks
-
+"use client"
 import { useState } from 'react';
+
+// useState hooks
 
 export default function MyComponent() {
     function createTodos() { }
@@ -17,21 +18,19 @@ export default function MyComponent() {
 //current state: todos,   initial state: createTodos()    set function: setAge
 
 
-
 // useState example
 
-// import { useState } from 'react';
+export /*default*/ function Counter() {
+  const [count, setCount] = useState(0);
 
-// export default function Counter() {
-//   const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
 
-//   function handleClick() {
-//     setCount(count + 1);
-//   }
+  return (
+    <button onClick={handleClick}>
+      You pressed me {count} times
+    </button>
+  );
+}
 
-//   return (
-//     <button onClick={handleClick}>
-//       You pressed me {count} times
-//     </button>
-//   );
-// }
