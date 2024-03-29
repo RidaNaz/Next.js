@@ -5,7 +5,7 @@ This includes dealing with network, browser DOM, animations, widgets written usi
 ## useEffect
 `useEffect` accepts two arguments. The second argument is optional.
 
-`useEffect`(`<function>`, `<dependency>`)
+`useEffect`(<function>, <dependency>)
 #### Example:
 ```typescript
 import { useState, useEffect } from "react";
@@ -31,7 +31,7 @@ root.render(<Timer />);
 * `useEffect` runs on every render. That means that when the count changes, a render happens, which then triggers another effect.
 * We should always include the second parameter which accepts an array. We can optionally pass dependencies to `useEffect` in this array.
 
-[see  more examples](/Next.js/step14_hooks/hooks02_useeffect/src/app/useeffect/page.tsx)
+[see  more examples](/step14_hooks/hooks02_useeffect/src/app/page.tsx)
 
 ### Effect Cleanup
 - Some effects require cleanup to reduce memory leaks.
