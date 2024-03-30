@@ -69,6 +69,6 @@ export default function RootLayout({
   );
 }
 ```
-[see step:03](./src/app/layout.tsx)
+[see step:04](./src/app/layout.tsx)
 
 [see context API code(2)](./src/app//contextApi)
