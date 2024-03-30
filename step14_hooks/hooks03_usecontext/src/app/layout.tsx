@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-       <CountProvider> {children} </CountProvider>    {/* Step 4: Placement of the Provider */}
+       <CountProvider> {children} </CountProvider>      {/* Step 4: Placement of the Provider */}
         </body>
     </html>
   );
