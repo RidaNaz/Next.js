@@ -33,6 +33,6 @@ The `revalidate` option specifies the time interval in seconds for Next.js to ch
 ## Generate Static Params
 The `generateStaticParams` function can be used in combination with dynamic route segments to statically generate routes at build time instead of on-demand at request time.
 
-[see `generatestatiparams` code](./src/app/[id]/page.tsx)
-
 *Dynamic page with Static features!*
+
+[see `generatestatiparams` code](./src/app/[id]/page.tsx)
