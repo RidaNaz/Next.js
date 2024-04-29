@@ -6,16 +6,6 @@
 
 ![App Screenshot](/step17_api/public/api_1.png)
 
-| Types of APIs | Types APIs |
-| :------------ | :--------- |
-| REST (Representational State of Resource) API | GraphQL API |
-| SOAP (Simple Object Access Protocol) API |  WebSocket API |
-| gRPC (Google Remote Procedure Call) API | Webhook API |
-| Server-Sent Events (SSE) API | Async API | 
-| WebRTC (Web Real-Time Communication) API | API Gateway API |
-| Microservices API |
-
-*Each type of API has its strengths and use cases, and the choice depends on the specific requirements of your application or service.*
 
 ## API Routes 
 
@@ -23,13 +13,17 @@
 
 * API routes in Next.js enable you to create **API endpoints** *as Node.js serverless functions*. These endpoints allow you to make *HTTPS requests* and also *communicate with a database*.
 
+![App Screenshot](/step17_api/public/api_2.png)
+
 API Routes continue to work in the `pages/api` directory without any changes. However, they have been replaced by Route Handlers in the `app` directory.
 
 ## Route Handlers
 
-you can create API endpoints using Route Handlers.
+* you can create API endpoints using Route Handlers.
 
-Route Handlers allow you to create **custom request handlers** for a given route using the Web **Request** and **Response** APIs.
+![App Screenshot](/step17_api/public/api_3.avif)
+
+* Route Handlers allow you to create **custom request handlers** for a given route using the Web **Request** and **Response** APIs.
 
 | app/api/route.ts
 ``` typescript
