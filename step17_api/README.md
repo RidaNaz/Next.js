@@ -31,9 +31,41 @@ export const dynamic = 'force-dynamic' // defaults to auto
 export async function GET(request: Request) {}
 ```
 
-| Route Handlers are only available inside the `app` directory. They are the equivalent of API Routes inside the `pages` directory meaning you do not need to use API Routes and Route Handlers together.
+| Route Handlers are only available inside the `app` directory. You do not need to use API Routes (`pages`) and Route Handlers (`app`) together, as Route Handlers should be able to handle all use cases.
 
 | Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
+
+## HTTP Methods
+A route file allows you to create custom request handlers for a given route. The following HTTP methods are supported: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
+
+| route.ts
+```typescript
+export async function GET(request: Request) {}
+ 
+export async function HEAD(request: Request) {}
+ 
+export async function POST(request: Request) {}
+ 
+export async function PUT(request: Request) {}
+ 
+export async function DELETE(request: Request) {}
+ 
+export async function PATCH(request: Request) {}
+ 
+// If `OPTIONS` is not defined, Next.js will automatically implement `OPTIONS` and  set the appropriate Response `Allow` header depending on the other methods defined in the route handler.
+export async function OPTIONS(request: Request) {}
+```
+
+### HTTP request vs API request
+
+| | Key Diffrences |
+|:-------------- |
+| Purpose | HTTP requests focus on fetching resources or interacting with web servers, while API requests aim to access or manipulate specific data or functionality.|
+| Endpoint | HTTP requests target a web server or resource, while API requests target a specific API endpoint (e.g., /users, /products). |
+| Data format | HTTP requests often involve HTML, CSS, or JavaScript, while API requests typically use standardized data formats like JSON, XML, or GraphQL. |
+| Authentication | API requests often require authentication tokens, API keys, or other authorization mechanisms, whereas HTTP requests may not. |
+
+![App Screenshot](/step17_api/public/api_4.png)
 
 ### Use Cases of API
 There are a few cases where you might use an API to fetch data for your application:
