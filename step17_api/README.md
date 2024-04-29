@@ -6,6 +6,19 @@
 
 ![App Screenshot](/step17_api/public/api_1.png)
 
+### | Types of APIs |
+| :-------------------------------------------- | 
+| REST (Representational State of Resource) API |
+| SOAP (Simple Object Access Protocol) API |
+| gRPC (Google Remote Procedure Call) API |
+| Server-Sent Events (SSE) API |
+| WebRTC (Web Real-Time Communication) API |
+| GraphQL API | WebSocket API |
+| Webhook API | Async API |
+| API Gateway API | Microservices API |
+
+*Each type of API has its strengths and use cases, and the choice depends on the specific requirements of your application or service.*
+
 ## API Routes 
 
 * An API route is a **URL** that directs incoming requests from the client to the appropriate server resource that will handle the requests.
@@ -39,17 +52,3 @@ There are a few cases where you might use an API to fetch data for your applicat
 
 
 
-
-In Next.js, API routes are used for:
-
-| Server-side rendering (SSR)| To pre-render pages with data fetched from an API. |
-| :------------------------- | :------------------------------------------------- |
-| Data fetching | To fetch data from an external API or a custom API built with Next.js API routes. |
-| Form handling | To handle form submissions and data mutations. |
-| Authentication | To handle authentication and authorization. |
-| Server-side logic | To run server-side logic, such as data processing or validation. |
-| Webhooks | To handle incoming webhooks from external services. |
-| Micro-apis | To build small, focused APIs that can be used by clients or other services. |
-| Legacy API support | To support legacy APIs or integrate with existing APIs. |
-| Caching | To cache data and improve performance. |
-| Server-side rendering with Suspense (SWR) | To use SWR for caching and revalidation. |
