@@ -52,13 +52,14 @@ export async function DELETE(request: Request) {}
  
 export async function PATCH(request: Request) {}
  
-// If `OPTIONS` is not defined, Next.js will automatically implement `OPTIONS` and  set the appropriate Response `Allow` header depending on the other methods defined in the route handler.
+// If `OPTIONS` is not defined, Next.js will automatically implement `OPTIONS` and  set the appropriate Response
+// `Allow` header depending on the other methods defined in the route handler.
 export async function OPTIONS(request: Request) {}
 ```
 
 ### HTTP request vs API request
 
-| | Key Diffrences |
+| HTTP & API | Key Diffrences |
 |:-------------- |
 | Purpose | HTTP requests focus on fetching resources or interacting with web servers, while API requests aim to access or manipulate specific data or functionality.|
 | Endpoint | HTTP requests target a web server or resource, while API requests target a specific API endpoint (e.g., /users, /products). |
