@@ -29,15 +29,17 @@ API Routes continue to work in the `pages/api` directory without any changes. Ho
 export const dynamic = 'force-dynamic' // defaults to auto
 export async function GET(request: Request) {}
 ```
-#### Extended `NextRequest` and `NextResponse` APIs
-In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
 - Route Handlers are only available inside the `app` directory. You do not need to use API Routes (`pages`) and Route Handlers (`app`) together, as Route Handlers should be able to handle all use cases.
 
 - Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
 
+#### Extended `NextRequest` and `NextResponse` APIs
+In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
+
 ## HTTP Methods
-An HTTP (Hypertext Transfer Protocol) request is a message sent from a client to a server to request a resource or perform an action.
+An HTTP *(Hypertext Transfer Protocol)* request is a message sent from a client to a server to request a resource or perform an action.
+
 A route file allows you to create custom request handlers for a given route. API Routes support HTTP methods like: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
 
 | route.ts
@@ -59,6 +61,8 @@ export async function PATCH(request: Request) {}
 export async function OPTIONS(request: Request) {}
 ```
 
+![App Screenshot](/step17_api/public/api_4.png)
+
 ### HTTP request vs API request
 
 | HTTP & API | Key Diffrences |
@@ -67,8 +71,6 @@ export async function OPTIONS(request: Request) {}
 | Endpoint | HTTP requests target a web server or resource, while API requests target a specific API endpoint (e.g., /users, /products). |
 | Data format | HTTP requests often involve HTML, CSS, or JavaScript, while API requests typically use standardized data formats like JSON, XML, or GraphQL. |
 | Authentication | API requests often require authentication tokens, API keys, or other authorization mechanisms, whereas HTTP requests may not. |
-
-![App Screenshot](/step17_api/public/api_4.png)
 
 ### Use Cases of API
 
