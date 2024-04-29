@@ -6,16 +6,14 @@
 
 ![App Screenshot](/step17_api/public/api_1.png)
 
-| Types of APIs |
-| :-------------------------------------------- | 
-| REST (Representational State of Resource) API |
-| SOAP (Simple Object Access Protocol) API |
-| gRPC (Google Remote Procedure Call) API |
-| Server-Sent Events (SSE) API |
-| WebRTC (Web Real-Time Communication) API |
-| GraphQL API | WebSocket API |
-| Webhook API | Async API |
-| API Gateway API | Microservices API |
+| Types of APIs | Types APIs |
+| :------------ | :--------- |
+| REST (Representational State of Resource) API | GraphQL API |
+| SOAP (Simple Object Access Protocol) API |  WebSocket API |
+| gRPC (Google Remote Procedure Call) API | Webhook API |
+| Server-Sent Events (SSE) API | Async API | 
+| WebRTC (Web Real-Time Communication) API | API Gateway API |
+| Microservices API |
 
 *Each type of API has its strengths and use cases, and the choice depends on the specific requirements of your application or service.*
 
