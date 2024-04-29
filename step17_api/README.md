@@ -25,20 +25,24 @@ API Routes continue to work in the `pages/api` directory without any changes. Ho
 
 * Route Handlers allow you to create **custom request handlers** for a given route using the Web **Request** and **Response** APIs.
 
-| app/api/route.ts
+| app/api/route.js
 ``` typescript
+export const dynamic = 'force-dynamic' // defaults to auto
 export async function GET(request: Request) {}
 ```
 
- If you previously used API routes to call an *external API from the client*, you can now use *Server Components* instead to securely fetch data.
+| Route Handlers are only available inside the `app` directory. They are the equivalent of API Routes inside the `pages` directory meaning you do not need to use API Routes and Route Handlers together.
 
-### Benefits of using APIs in Next.js
+| Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
 
+### Use Cases of API
 There are a few cases where you might use an API to fetch data for your application:
 
 - If you're using 3rd party services that provide an API.
 
 - If you're fetching data from the client, you want to have an API layer that runs on the server to avoid exposing your database secrets to the client.
+
+
 
 
 
