@@ -1,18 +1,39 @@
 # API (Application Programming Interface)
 
-In Next.js 14, APIs are a core feature that allows your application to communicate with external services or data sources and handle data logic on the server-side. 
+* An API serves as a **means of communication** between *two computers or pieces of software*. In a web application, an API facilitates communication between the client and the server.
+
+* In Next.js 14, APIs are a core feature that allows your application to communicate with *external services* or *data sources* and *handle data logic* on the **server-side**. 
+
+![App Screenshot](/step17_api/public/api_1.png)
+
+## API Routes 
+
+* An API route is a **URL** that directs incoming requests from the client to the appropriate server resource that will handle the requests.
+
+* API routes in Next.js enable you to create **API endpoints** *as Node.js serverless functions*. These endpoints allow you to make *HTTPS requests* and also *communicate with a database*.
+
+API Routes continue to work in the `pages/api` directory without any changes. However, they have been replaced by Route Handlers in the `app` directory.
+
+## Route Handlers
+
+you can create API endpoints using Route Handlers.
+
+Route Handlers allow you to create **custom request handlers** for a given route using the Web **Request** and **Response** APIs.
+
+| app/api/route.ts
+``` typescript
+export async function GET(request: Request) {}
+```
+
+ If you previously used API routes to call an *external API from the client*, you can now use *Server Components* instead to securely fetch data.
 
 ### Benefits of using APIs in Next.js
 
-Here are the top 5 most important benefits of using APIs in Next.js 14:
+There are a few cases where you might use an API to fetch data for your application:
 
-| Scalability | APIs enable you to scale your application more efficiently, as you can deploy and manage your backend and frontend independently. |
-| :---------- | :----------------------------------------------------------------------------- |
-| Flexibility | APIs provide flexibility in terms of data formats, protocols, and authentication methods, making it easier to integrate with various services and systems. |
-| Improved Performance |  APIs allow for optimized data fetching and caching, leading to improved performance and faster page loads. |
-| Enhanced Security | APIs provide an additional layer of security, as you can implement authentication and authorization mechanisms to protect your data and endpoints. |
-| Server-Side Rendering (SSR) | APIs enable SSR, which improves SEO and provides a faster user experience. |
+- If you're using 3rd party services that provide an API.
 
+- If you're fetching data from the client, you want to have an API layer that runs on the server to avoid exposing your database secrets to the client.
 
 
 
