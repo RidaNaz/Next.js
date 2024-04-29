@@ -6,7 +6,6 @@
 
 ![App Screenshot](/step17_api/public/api_1.png)
 
-
 ## API Routes 
 
 * An API route is a **URL** that directs incoming requests from the client to the appropriate server resource that will handle the requests.
@@ -30,13 +29,16 @@ API Routes continue to work in the `pages/api` directory without any changes. Ho
 export const dynamic = 'force-dynamic' // defaults to auto
 export async function GET(request: Request) {}
 ```
+#### Extended `NextRequest` and `NextResponse` APIs
+In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
-| Route Handlers are only available inside the `app` directory. You do not need to use API Routes (`pages`) and Route Handlers (`app`) together, as Route Handlers should be able to handle all use cases.
+- Route Handlers are only available inside the `app` directory. You do not need to use API Routes (`pages`) and Route Handlers (`app`) together, as Route Handlers should be able to handle all use cases.
 
-| Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
+- Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
 
 ## HTTP Methods
-A route file allows you to create custom request handlers for a given route. The following HTTP methods are supported: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
+An HTTP (Hypertext Transfer Protocol) request is a message sent from a client to a server to request a resource or perform an action.
+A route file allows you to create custom request handlers for a given route. API Routes support HTTP methods like: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
 
 | route.ts
 ```typescript
@@ -69,15 +71,8 @@ export async function OPTIONS(request: Request) {}
 ![App Screenshot](/step17_api/public/api_4.png)
 
 ### Use Cases of API
-There are a few cases where you might use an API to fetch data for your application:
 
-- If you're using 3rd party services that provide an API.
-
-- If you're fetching data from the client, you want to have an API layer that runs on the server to avoid exposing your database secrets to the client.
-
-
-
-
-
-
-
+- **Data Fetching:** API Routes can fetch data from external sources or databases.
+- **Data Mutation:** API Routes can create, update, or delete data.
+- **Authentication:** API Routes can handle authentication and authorization.
+- **Server-Side Rendering:** API Routes can pre-render pages with fetched data.
