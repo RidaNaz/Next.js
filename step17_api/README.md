@@ -60,7 +60,7 @@ export async function OPTIONS(request: Request) {}
 ### HTTP request vs API request
 
 | HTTP & API | Key Diffrences |
-|:-------------- |
+|:---------- | :------------- |
 | Purpose | HTTP requests focus on fetching resources or interacting with web servers, while API requests aim to access or manipulate specific data or functionality.|
 | Endpoint | HTTP requests target a web server or resource, while API requests target a specific API endpoint (e.g., /users, /products). |
 | Data format | HTTP requests often involve HTML, CSS, or JavaScript, while API requests typically use standardized data formats like JSON, XML, or GraphQL. |
