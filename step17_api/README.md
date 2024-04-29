@@ -6,7 +6,7 @@
 
 ![App Screenshot](/step17_api/public/api_1.png)
 
-### | Types of APIs |
+| Types of APIs |
 | :-------------------------------------------- | 
 | REST (Representational State of Resource) API |
 | SOAP (Simple Object Access Protocol) API |
