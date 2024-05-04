@@ -16,9 +16,11 @@ Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-p
 
 ## 1. GET Method
 * To get a list of books, Add endpoint in the base URL like:
+
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_1.jpg)
 
 * You can also get detailed information about a book:
+
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_2.jpg)
 
 ## 2. POST Method
