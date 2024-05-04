@@ -13,8 +13,8 @@ Thunder Client and Postman are both popular tools for testing APIs, but they hav
 | :------------- | :------ |
 | Thunder Client is a native VS Code extension. | Postman is a standalone app. |
 | Thunder Client uses a code-focused approach. | Postman uses a visual interface. |
-| Thunder Client is completely free and open-source. | Postman has a free plan with limitations and paid plans also. |
 |  Thunder Client has a steeper learning curve due to its code-focused approach. | Postman has a more intuitive interface. |
+| Thunder Client is completely free and open-source. | Postman has a free plan with limitations and paid plans also. |
 
 # API testing with Thunder Client
 ### Common steps that must be followed
