@@ -1,4 +1,4 @@
-### What is Thunder Client?
+# Thunder Client
 Thunder Client is a popular **extension** of Visual Studio Code *(VS Code)*. With Thunder Client, you can:
 
 * Send ***HTTP requests*** (GET, POST, PUT, DELETE, etc.) with custom *headers, body, and query parameters*.
