@@ -59,10 +59,10 @@ It also requires [Authentication](/step17_api/00_api-testing_thunder-client/READ
 ## API Authentication
 * To submit, view, update or delete an order, you need to register your ***API client***.
 * Provide `clientName` and `clientEmail` in body then the response will generate `accessToken`.
-* Now, you can use this generated token in `Auth > Bearer`.
 
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_9.jpg)
 
-- The access token is ***valid for 7 days***.
-- **Possible errors** : ***Status code 409 - "API client already registered."*** Try changing the values for `clientEmail` and `clientName`.
+* Now, you can use this generated token in `Auth > Bearer`.
+* The access token is ***valid for 7 days***.
+* **Possible errors** : ***Status code 409 - "API client already registered."*** Try changing the values for `clientEmail` and `clientName`.
 
