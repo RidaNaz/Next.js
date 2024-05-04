@@ -7,7 +7,7 @@ Thunder Client is a popular **extension** of Visual Studio Code *(VS Code)*. Wit
 * *Import and export requests* for collaboration or reuse.
 
 # API testing with Thunder Client
-Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md)** for testing: *https://simple-books-api.glitch.me* (This is the base URL)
+Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md)** for testing : *https://simple-books-api.glitch.me* (This is the base URL)
 
 #### Common steps that must be followed
 * *Install* Thunder Client extension in VSCode, *Open* it & create a *New Request*.
@@ -15,3 +15,10 @@ Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-p
 * *Send the Request* & *View the response* in the Thunder Client panel.
 
 ## 1. GET Method
+* To get a list of books, Add endpoint in the base URL like:
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_1.jpg)
+
+* You can also get detailed information about a book:
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_2.jpg)
+
+## 2. POST Method
