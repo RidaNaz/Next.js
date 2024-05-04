@@ -1,6 +1,6 @@
 # API (Application Programming Interface)
 
-* An API serves as a **means of communication** between *two computers or pieces of software*. In a web application, an API facilitates communication between the client and the server.
+* An API serves as a **means of communication** between *two computers or pieces of software*. In a web application, an API facilitates communication between the *client and the server*.
 
 * In Next.js 14, APIs are a core feature that allows your application to communicate with *external services* or *data sources* and *handle data logic* on the **server-side**. 
 
@@ -21,8 +21,8 @@ The API management platform functions as the **control center**, overseeing the 
 * **API Security Services**
 API security services form the **protective layer**, ensuring the security and safeguarding of data and communication.
 
-## Types of APIs
- When it comes to web services, there are various types of APIs available, including REST, GraphQL, gRPC and SOAP. While these terms represent different architectural styles and have distinct characteristics.
+## Types of API Architecture
+ When it comes to web services, there are various types of APIs available, including *REST, GraphQL, gRPC and SOAP*. While these terms represent different **architectural styles** and have distinct characteristics. We use Rest API in our course that is *Rest API*.
 
 ### REST API
 * REST *(Representational State Transfer)* is an architectural style that makes a connection between the client and the server and as soon as the server responds, it closes the connection.
@@ -36,16 +36,6 @@ API security services form the **protective layer**, ensuring the security and s
 * It doesn’t encrypt data or has some special standard to send a message to the server.
 
 ![How REST API works](/step17_api/public/api_2.png)
-
-##### why API integration matters?
-Integrating APIs into web applications is crucial for several reasons:
-* Data Enrichment
-* Dynamic Content
-* Third-Party Services
-* Data Aggregation
-
-##### what is Postman?
-Postman is an API platform for building and using APIs. Postman's built-in API client enables you to create and send API requests, including HTTP, GraphQL, and gRPC requests. Using Postman, you can send a request to an endpoint, retrieve data from a data source, or test an API's functionality.
 
 # APIs in Next.js
 
@@ -80,8 +70,17 @@ export async function GET(request: Request) {}
 #### Extended `NextRequest` and `NextResponse` APIs
 In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
-## HTTP Methods
+##### What are HTTP Methods?
 An HTTP *(Hypertext Transfer Protocol)* request is a message sent from a client to a server to request a resource or perform an action.
 
 A route file allows you to create custom request handlers for a given route. API Routes support HTTP methods like: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
 
+##### Why API integration matters?
+Integrating APIs into web applications is crucial for several reasons:
+* Data Enrichment
+* Dynamic Content
+* Third-Party Services
+* Data Aggregation
+
+##### What is Postman?
+Postman is an API platform for building and using APIs. Postman's built-in API client enables you to create and send API requests, including HTTP, GraphQL, and gRPC requests. Using Postman, you can send a request to an endpoint, retrieve data from a data source, or test an API's functionality.
