@@ -23,23 +23,43 @@ Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-p
 
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_2.jpg)
 
-* You can also **view all of your orders** (To see orders you first have to post an order) .
+* You can also **view all of your orders** (To see orders you first have to **post an order**).
 
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_3.jpg)
 
-[For Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication)
+* You can also **view your specific order** by giving orderId:
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_4.jpg)
+
+[To get orders you need Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication)
 
 ## 2. POST Method
 * If you want to **submit a new order**, Follow steps:
 
-![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_4.jpg)
-
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_5.jpg)
 
-[For Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication)
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_6.jpg)
 
-## 3. 
+[To post orders you need Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication)
+
+## 3. PATCH Method
+* You can Update an existing order by selecting `PATCH` method and providing specific orderId (but in simple books API, You can change `customerName` only) :
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_7.jpg)
+
+It also requires [Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication) & after sending a request you get `Status: 204` (it means your order is updated successfully).
+
+## 4. DELETE Method
+* You can also delete your order by selecting `DELETE` method and providing orderId:
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_8.jpg)
+
+It also requires [Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication) & after sending a request you get `Status: 204` (it means your order is deleted successfully).
 
 ## API Authentication
 
-![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_8.jpg)
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_9.jpg)
+
+- The access token is ***valid for 7 days***.
+- **Possible errors** : ***Status code 409 - "API client already registered."*** Try changing the values for `clientEmail` and `clientName`.
+
