@@ -15,12 +15,30 @@ Here I am using **[Simple Books API](https://github.com/vdespa/introduction-to-p
 * *Send the Request* & *View the response* in the Thunder Client panel.
 
 ## 1. GET Method
-* To get a list of books, Add endpoint in the base URL like:
+* To get a **list of books**, Add endpoint in the base URL like:
 
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_1.jpg)
 
-* You can also get detailed information about a book:
+* You can also get detailed **information about a book**:
 
 ![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_2.jpg)
 
+* You can also view all of your orders & it Requires authentication (To see orders you first have to post an order) .
+
+
+
+
 ## 2. POST Method
+* If you want to submit a new order, Follow steps:
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_3.jpg)
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_4.jpg)
+
+[For Authentication](/step17_api/00_api-testing_thunder-client/README.md#api-authentication)
+
+## 3. 
+
+## API Authentication
+
+![App Screenshot](/step17_api/00_api-testing_thunder-client/public/api_5.jpg)
