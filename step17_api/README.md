@@ -67,7 +67,7 @@ export async function GET(request: Request) {}
 
 - Route Handlers can be nested inside the `app` directory, similar to `page.js` and `layout.js`. But there cannot be a `route.js` file at the same route segment level as `page.js`.
 
-#### Extended `NextRequest` and `NextResponse` APIs
+### Extended `NextRequest` and `NextResponse` APIs
 In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
 ##### What are HTTP Methods?
