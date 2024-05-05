@@ -22,6 +22,12 @@ export async function GET(request: Request) {}
 
 * Route Handlers can be nested inside the `app` directory, similar to `page.ts` and `layout.ts`. But there cannot be a `route.ts` file at the same route segment level as `page.ts`.
 
+## API Dynamic Route
+* In Next.js, an API dynamic route is a route that can handle *dynamic parameters in the URL path*.
+* This allows you to create *reusable API endpoints* that can handle different scenarios based on the input parameters.
+* Inside the API route file, you can *access the dynamic parameters* using the `req.params` object.
+[see code](/step17_api/01_api-crud-operations/src/app/api/[id]/route.ts)
+
 ### Extended `NextRequest` and `NextResponse` APIs
 In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
