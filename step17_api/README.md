@@ -29,7 +29,7 @@ API security services form the **protective layer**, ensuring the security and s
 
 * It allows applications across the internet to interact with each other using the HTTP *(Hypertext Transfer Protocol)* requests.
 
-* REST APIs typically support [CRUD](/step17_api/01_api-crud-operations/README.md#crud-operations-implementation) *(Create, Read, Update, Delete)* operations on resources using the standard HTTP methods: POST *(Create)*, GET *(Read)*, PUT/PATCH *(Update)*, and DELETE *(Delete)*.
+* REST APIs typically support [CRUD *(Create, Read, Update, Delete)*](/step17_api/01_api-crud-operations/README.md#crud-operations-implementation) operations on resources using the standard HTTP methods: POST *(Create)*, GET *(Read)*, PUT/PATCH *(Update)*, and DELETE *(Delete)*.
 
 * It returns data in JSON *(JavaScript Object Notation)* format.
 
