@@ -84,3 +84,13 @@ Integrating APIs into web applications is crucial for several reasons:
 
 ##### What is Postman?
 Postman is an API platform for building and using APIs. Postman's built-in API client enables you to create and send API requests, including HTTP, GraphQL, and gRPC requests. Using Postman, you can send a request to an endpoint, retrieve data from a data source, or test an API's functionality.
+
+## Thunder Client vs Postman
+[Thunder Client](/step17_api/00_api-testing_thunder-client/README.md#thunder-client) and Postman are both popular tools for testing APIs, but they have some differences that might make ***Thunder Client a better choice for you***:
+
+| Thunder Client | Postman |
+| :------------- | :------ |
+| Thunder Client is a native VS Code extension. | Postman is a standalone app. |
+| Thunder Client uses a code-focused approach. | Postman uses a visual interface. |
+|  Thunder Client has a steeper learning curve due to its code-focused approach. | Postman has a more intuitive interface. |
+| Thunder Client is completely free and open-source. | Postman has a free plan with limitations and paid plans also. |

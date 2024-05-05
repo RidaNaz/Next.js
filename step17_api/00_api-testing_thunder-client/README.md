@@ -6,16 +6,6 @@ Thunder Client is a popular **extension** of Visual Studio Code *(VS Code)*. Wit
 * ***Save*** and ***manage API requests*** for future use.
 * ***Import and export requests*** for collaboration or reuse.
 
-## Thunder Client vs Postman
-Thunder Client and Postman are both popular tools for testing APIs, but they have some differences that might make ***Thunder Client a better choice for you***:
-
-| Thunder Client | Postman |
-| :------------- | :------ |
-| Thunder Client is a native VS Code extension. | Postman is a standalone app. |
-| Thunder Client uses a code-focused approach. | Postman uses a visual interface. |
-|  Thunder Client has a steeper learning curve due to its code-focused approach. | Postman has a more intuitive interface. |
-| Thunder Client is completely free and open-source. | Postman has a free plan with limitations and paid plans also. |
-
 # API testing with Thunder Client
 ### Common steps that must be followed
 * ***Install*** Thunder Client extension in VSCode, ***Open*** it & create a ***New Request***.
