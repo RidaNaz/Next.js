@@ -70,19 +70,19 @@ export async function GET(request: Request) {}
 ### Extended `NextRequest` and `NextResponse` APIs
 In addition to supporting native `Request` and `Response`. Next.js extends them with `NextRequest` and `NextResponse` to provide convenient helpers for advanced use cases.
 
-##### What are HTTP Methods?
+#### What are HTTP Methods?
 An HTTP *(Hypertext Transfer Protocol)* request is a message sent from a client to a server to request a resource or perform an action.
 
 A route file allows you to create custom request handlers for a given route. API Routes support HTTP methods like: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`, and `OPTIONS`. If an unsupported method is called, Next.js will return a `405 Method Not Allowed` response.
 
-##### Why API integration matters?
+#### Why API integration matters?
 Integrating APIs into web applications is crucial for several reasons:
 * Data Enrichment
 * Dynamic Content
 * Third-Party Services
 * Data Aggregation
 
-##### What is Postman?
+#### What is Postman?
 Postman is an API platform for building and using APIs. Postman's built-in API client enables you to create and send API requests, including HTTP, GraphQL, and gRPC requests. Using Postman, you can send a request to an endpoint, retrieve data from a data source, or test an API's functionality.
 
 ## Thunder Client vs Postman

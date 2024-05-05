@@ -5,7 +5,7 @@ This includes dealing with network, browser DOM, animations, widgets written usi
 ## useEffect
 `useEffect` accepts two arguments. The second argument is optional.
 
-`useEffect`(<function>, <dependency>)
+`useEffect`(function, dependency?)
 #### Example:
 ```typescript
 import { useState, useEffect } from "react";
