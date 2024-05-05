@@ -6,7 +6,7 @@ To start a request, call the special function fetch():
 const response = await fetch(resource[, options]);
 ```
 which accepts 2 arguments:
-* resource: the *URL string.*, or a *Request object.*
+* resource: the *URL string*, or a *Request object.*
 * options: the *configuration object with properties* like method, headers, body, credentials, and more.
 
 let's make a request to fetch tutorials:
