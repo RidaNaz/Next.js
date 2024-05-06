@@ -25,6 +25,7 @@ This hook is used to fetch data on the client-side after the component has mount
 SWR *(stale-while-revalidate)* is a React Hooks library for data fetching, which means it is a tool for retrieving data from a *server, API or database*.
 
 * You need to install it first:
+
 | cmd
 ```ts
 npm i swr
