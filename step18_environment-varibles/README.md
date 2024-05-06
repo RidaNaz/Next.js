@@ -21,8 +21,8 @@ Next.js 14 offers several ways to define environment variables:
 - Create a `.env` file *(ignored by Git by default)* in your **project's root directory**.
 - Define variables in the format `KEY=VALUE` (e.g., `API_KEY=your_api_key`).
 
-|.env
-```typecsript
+| .env
+```
 DB_USERNAME=myuser
 DB_PASSWORD=mypassword
 ```
