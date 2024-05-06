@@ -20,7 +20,20 @@ Next.js 14 offers several ways to define environment variables:
 
 - Create a `.env` file *(ignored by Git by default)* in your **project's root directory**.
 - Define variables in the format `KEY=VALUE` (e.g., `API_KEY=your_api_key`).
+
+|.env
+```typecsript
+DB_USERNAME=myuser
+DB_PASSWORD=mypassword
+```
+
 - ***Access*** these variables on the server-side using` process.env.KEY`.
+
+| use in any server component in a project without importing it
+```typescript
+const dbUsername = process.env.DB_USERNAME;
+const dbPassword = process.env.DB_PASSWORD;
+```
 
 ### * `.env.local`:
 
@@ -31,3 +44,13 @@ Next.js 14 offers several ways to define environment variables:
 - Create environment-specific `.env` files (e.g., `.env.development`, `.env.production`).
 - Useful for configuration that ***differs between environments***.
 - Access these variables using `process.env.KEY` but the specific values will be *loaded based* on the current environment *(development, production, etc.)*.
+
+##  Deployment of Environment Variables
+
+* Make sure to add your `.env` file to your `.gitignore` file to prevent sensitive information from being committed.
+* **Commit** and **push** your changes to your Git repository, then deploy to Vercel.
+* While deploying, navigate to the "Environment Variables" tab and provide a *key-value pair* for each environment variable.
+
+![App Screenshot](/step18_environment-varibles/public/ss1.jpg)
+
+**Environment Selection (Optional):** By default, environment variables are applied to all deployments *(development, preview, production)*. You can optionally choose specific environments where you want the variable to be available.
