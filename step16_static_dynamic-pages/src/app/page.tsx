@@ -1,5 +1,5 @@
 
-// By default there is 'force-cache' it means that by deafult the page is static and will be rendered statically at build time.
+// By default there is 'force-cache' it means that by default the page is static and will be rendered statically at build time.
 
 
 const getData = async () => {

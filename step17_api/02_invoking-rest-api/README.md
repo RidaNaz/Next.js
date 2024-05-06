@@ -57,9 +57,9 @@ async function fetchMovies404() {
 };
 ```
 
-`response.ok` property lets you distinguish good from bad HTTP response statuses. The property is set to true only if the response has status `200-299`.
+* `response.ok` property lets you distinguish good from bad HTTP response statuses. The property is set to true only if the response has status `200-299`.
 
-To throw an error on a bad HTTP status (outside of the range `200-299`), check the value of `response.ok` property and throw an error manually:
+* To throw an error on a bad HTTP status (outside of the range `200-299`), check the value of `response.ok` property and throw an error manually:
 ```ts
 async function fetchMoviesBadStatus() {
   const response = await fetch('/oops');
