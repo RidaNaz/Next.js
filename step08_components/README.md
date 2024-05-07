@@ -1,10 +1,10 @@
 # Components
-In Next.js 14, components form the fundamental building blocks of your application, similar to other React-based frameworks.
-A component is a reusable piece of code that defines a particular section of your user interface (UI) and its behavior. It encapsulates everything needed to render that section, including:
+* User interfaces can be broken down into *smaller building blocks* called ***components***.
+* A component is a reusable piece of code that defines a particular section of your user interface (UI) and its behavior. It encapsulates everything needed to render that section, including:
 
-- **UI Elements:** These can be basic HTML elements (like `div`, `p`, and `button`) or custom components you define.
-- **Logic:** JavaScript code that defines how the component behaves and interacts with data or user input.
-- **State:** Data specific to the component that can change over time, often managed using the `useState` hook or state management libraries like Redux or Context API.
+  - **UI Elements:** These can be basic HTML elements (like `div`, `p`, and `button`) or custom components you define.
+  - **Logic:** JavaScript code that defines how the component behaves and interacts with data or user input.
+  - **State:** Data specific to the component that can change over time, often managed using the `useState` hook or state management libraries like Redux or Context API.
 
 ### Key Points.
 * Components are a function.

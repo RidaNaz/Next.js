@@ -11,4 +11,5 @@ export default function Home() {
     </>
   );
 } 
+
 // the component under `page.tsx` must be `export default`, either the component is named function or arrow function.
