@@ -26,7 +26,7 @@ export default function Page() {
 
 ## Client Components
 * Client Components can *only* import actions that use the ***module-level*** `use server` directive.
-* To call a Server Action in a Client Component, create a new file and add the `use server` directive at the top of it.
+* To call a Server Action in a Client Component, create a new file (with `.ts` or `.js` extension) and add the `use server` directive at the top of it.
 * All functions within the file will be marked as Server Actions that can be reused in *both* ***Client and Server Components*** :
 ```ts
 'use server'
@@ -60,5 +60,13 @@ export default function ClientComponent({ updateItem }) {
   return <form action={updateItem}>{/* ... */}</form>
 }
 ```
+
+Here are the benefits of using Server Actions in Next.js:
+
+* **Reduced client-side JavaScript:** This reduces the initial page load time and improves the overall performance.
+* **Server-side data mutations:** This eliminates the need for API routes.
+* **Data fetching:** This can be done in a more efficient way.
+* **Code organization:** This is enforced by separating server-side and client-side code.
+* **Authentication and authorization:** Sensitive logic and API keys are kept on the server-side, away from the client-side code.
 
 [Explore More...](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations#behavior)
