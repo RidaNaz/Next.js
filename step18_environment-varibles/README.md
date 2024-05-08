@@ -6,10 +6,10 @@
 
 ## Different Types of Environment Variables:
 
-##### * Client-Side Environment Variables:
+* ##### Client-Side Environment Variables:
 Accessible only on the client-side *(user's browser)* during runtime. ***Not recommended*** for storing sensitive data due to security risks.
 
-##### * Server-Side Environment Variables:
+* ##### Server-Side Environment Variables:
 Accessible on the server-side during *build time* and *runtime*. ***Ideal*** for sensitive data and configuration values.
 
 ## Configuration Files:
@@ -21,16 +21,16 @@ Next.js 14 offers several ways to define environment variables:
 - Create a `.env` file *(ignored by Git by default)* in your **project's root directory**.
 - Define variables in the format `KEY=VALUE` (e.g., `API_KEY=your_api_key`).
 
-| .env
-```
+> .env
+```bash
 DB_USERNAME=myuser
 DB_PASSWORD=mypassword
 ```
 
 - ***Access*** these variables on the server-side using` process.env.KEY`.
 
-| use in any server component in a project without importing it
-```typescript
+> use in any server component in a project without importing it
+```ts
 const dbUsername = process.env.DB_USERNAME;
 const dbPassword = process.env.DB_PASSWORD;
 ```

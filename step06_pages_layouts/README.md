@@ -1,23 +1,23 @@
 The special files `layout.js`, `page.js`, and `template.js` allow you to create UI for a route.
 
 # Pages
-* A page is UI that is unique to a route. You can define a page by default exporting a component from a page.js file.
-*For example, to create your index page, add the page.js file inside the app directory*
+* A page is UI that is unique to a route. You can define a page by ***default exporting*** a component from a `page.tsx` file.
+*For example, to create your index page, add the `page.tsx` file inside the `app` directory*
 
-* Then, to create further pages, create a new folder and add the page.js file inside it.
-*For example, to create a page for the /dashboard route, create a new folder called dashboard, and add the page.js file inside it.*
+* Then, to create further pages, create a new folder and add the `page.tsx` file inside it.
+*For example, to create a page for the` /dashboard` route, create a new folder called dashboard, and add the `page.tsx` file inside it.*
 
 ### Note:
 - The `.js`, `.jsx`, or `.tsx` file extensions can be used for Pages.
 - A page is always the leaf of the route subtree.
-- A `page.js` file is required to make a route segment publicly accessible.
+- A `page.tsx` file is required to make a route segment publicly accessible.
 - Pages are **Server Components** by default, but can be set to a **Client Component**.
 - Pages can fetch data.
 
 # Layouts
-A layout is UI that is shared between multiple routes. On navigation, layouts preserve state, remain interactive, and do not re-render. Layouts can also be nested.
+A layout is UI that is shared between ***multiple routes***. On navigation, layouts ***preserve state, remain interactive***, and ***do not re-render***. Layouts can also be ***nested***.
 
-You can define a layout by default exporting a React component from a `layout.js` file. The component should accept a `children` prop that will be populated with a child layout (if it exists) or a page during rendering.
+You can define a layout by ***default exporting a React component*** from a `layout.tsx` file. The component should accept a `children` **prop** that will be populated with a child layout (if it exists) or a page during rendering.
 
 > app/dashboard/layout.tsx
 ```typescript
@@ -43,13 +43,13 @@ The root layout is defined at the top level of the `app` directory and applies t
 ## Nesting Layouts
 By default, layouts in the folder hierarchy are nested, which means they wrap child layouts via their children prop. You can nest layouts by adding `layout.tsx` **inside specific route segments (folders)**.
 
-For example, to create a `layout` for the `/dashboard` route, add a new `layout.js` file inside the dashboard folder:
+For example, to create a `layout` for the `/dashboard` route, add a new `layout.tsx` file inside the dashboard folder:
 ![App Screenshot](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Fnested-layout.png&w=1920&q=75&dpl=dpl_6KCyCubUZsUJqRhbdCqXmYHbtEPT)
 
 ## Layout Structure
 ### Imports:
 
-* `type { Metadata } from "next"`: This line imports the type definition for the `Metadata` object from Next.js. This object is used to define metadata about your application, such as the title and description.
+* `type { Metadata } from "next"`: This line imports the type definition for the `Metadata` object from Next.js. This object is used to define *metadata about your application*, such as the **title and description**.
 * `import { Inter } from "next/font/google"`: This line imports the `Inter` font family from Google Fonts using the Next.js font API. The `subsets: ["latin"]` option specifies that you only want the Latin character set for this font.
 * `import "./globals.css"`;: This line imports the "globals.css" file, which likely contains styles that are applied globally to your entire application.
 

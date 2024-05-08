@@ -10,7 +10,7 @@ There are four ways to navigate between routes in Next.js:
 
 # The `<Link>` component
 `<Link>` is a built-in component that extends the HTML `<a>` tag to provide prefetching and client-side navigation between routes. It is the primary and recommended way to navigate between routes in Next.js.
-You can use it by importing it from `next/link`, and passing a `href` prop to the component.
+You can use it by importing it from `next/link`, and passing a `href` ***prop*** to the component.
 
 Here's a [summary of the props](https://nextjs.org/docs/app/api-reference/components/link#props) for the Link Component.
 
@@ -43,7 +43,7 @@ export default function PostList({ posts }) {
 The `useRouter` hook allows you to programmatically change routes from Client Components.
 
 > app/pages.tsx
-```typescript
+```tsx
 'use client'
  
 import { useRouter } from 'next/navigation'

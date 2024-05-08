@@ -77,21 +77,23 @@ export default function Document() {
 }
 ```
 ### Note:
-Although you can use both routers in the same project, routes in app will be prioritized over pages. We recommend using only one router in your new project to avoid confusion.
+Although you can use both routers in the same project, routes in app will be prioritized over pages. I recommend using only one router in your new project to avoid confusion.
 
 ## The public folder (optional)
-Create a public folder to store static assets such as images, fonts, etc. Files inside public directory can then be referenced by your code starting from the base URL (/).
+Create a public folder to store *static assets such as images, fonts, etc*. Files inside public directory can then be *referenced* by your code starting from the base URL ***(/)***.
 
 # Project Structures
 ## Folder Structure of Next.js
 
 Next.js is a framework built on top of React.js, designed to facilitate server-side rendering and static site generation. It's known for its 'convention over configuration'. Here's a typical Next.js folder structure:
 
+- **src/:**  *This is where most of the code lives. It typically contains subdirectories like components/, containers/, hooks/, utils/, and others.*
+
 - **pages/:**  *The heart of a Next.js application. Each TypeScript file under this directory becomes a route based on its file name. Example: pages/index.ts is the entry point (home page), and pages/about.ts would correspond to the /about route.*
 
 - **public/:**  *This directory holds static files like images, fonts, and other assets. You can reference these files in your code starting from the base URL of your site.*
 
-- **components/:**  *Although not required by Next.js, it's a common practice to have this folder for all your shared React components. Example: components/Header.js, components/Footer.js.*
+- **components/:**  *Although not required by Next.js, it's a common practice to have this folder for all your shared components. Example: components/Header.js, components/Footer.js.*
 
 - **styles/:**  *This is where your CSS files live. You can have global styles, and with the support of CSS Modules, you can also have component-specific styles.*
 
@@ -101,27 +103,8 @@ Next.js is a framework built on top of React.js, designed to facilitate server-s
 
 - **next.config.js:**  *Optional configuration file for customizing various aspects of Next.js.*
 
-
-## Folder Structure of React.js
-
-React.js, a library for building user interfaces, is more flexible in terms of structure compared to Next.js. The folder structure is not enforced, but there are common patterns that developers follow. Here’s a commonly used structure:
-
-- **src/:**  *This is where most of the code lives. It typically contains subdirectories like components/, containers/, hooks/, utils/, and others.*
-
-- **public/:**  *Similar to Next.js, this folder contains static assets.*
-
-- **components/:**  *Stores reusable UI components.Example: components/Button.js, components/Navbar.js.*
-
-- **containers/:**  *Often used for components that are connected to data sources or state management.*
-
-- **hooks/:**  *Custom React hooks for shared logic.*
-
 - **utils/:**  *Utility functions and helpers.*
-
-- **node_modules/:**  *Just like in Next.js, it houses all the dependencies.*
-
-- **package.json:**  *The role is the same as in Next.js – managing dependencies and scripts.*
 
 - **.env files:**  *For managing environment variables.*
 
-Next.js, with its opinionated structure, simplifies the process of setting up a server-rendered application, while React.js offers more flexibility, allowing developers to structure their projects as they see fit. Both offer powerful solutions for building modern web applications.
+Next.js, with its opinionated structure, simplifies the process of setting up a server-rendered application.

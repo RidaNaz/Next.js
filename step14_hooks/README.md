@@ -1,15 +1,9 @@
 # Hooks
 Hooks let you use different React features from your components. You can either use the *built-in Hooks* or *combine them* to build your own. 
 
-- You must `import` Hooks from `react`.
-
-- Here we are using the `useState` Hook to keep track of the application state.
-
-- State generally refers to application data or properties that need to be tracked.
-
 ## Hook Rules
-There are 3 rules for hooks:
 
+- You must `import` Hooks from `react`.
 - Hooks can only be called inside React function components.
 - Hooks can only be called at the top level of a component.
 - Hooks cannot be conditional.

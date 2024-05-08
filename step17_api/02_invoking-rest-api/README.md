@@ -4,7 +4,7 @@ Fetch API is an asynchronous web API that comes with native JavaScript, and it r
 ###  fetch()
 The Fetch API accesses resources across the network. You can make HTTP requests (using GET, POST and other methods), download, and upload files.
 
-| To start a request, call the special function fetch():
+> To start a request, call the special function fetch():
 ```typescript
 const response = await fetch(resource, [options]);
 ```
@@ -12,8 +12,8 @@ which accepts 2 arguments:
 * resource: the *URL string*, or a *Request object.*
 * options: the *configuration object with properties* like **method, headers, body, credentials**, and more.
 
-| let's make a request to fetch tutorials:
-```typescript
+> let's make a request to fetch tutorials:
+```tsx
 async function fetchMovies() {
   const response = await fetch('/tutorials');
   // waits until the request completes...
@@ -28,8 +28,8 @@ async function fetchMovies() {
 
 * `response.json()` is a method of the **Response object** that allows a JSON object to be extracted from the response. The method returns a *promise*, so you have to wait for the JSON: `await response.json()`.
 
-| you can extract the JSON object from a fetch response:
-```typescript
+> you can extract the JSON object from a fetch response:
+```tsx
 async function fetchtutorialsJSON() {
   const response = await fetch('/tutorials');
   const tutorials = await response.json();
@@ -44,8 +44,8 @@ fetchtutorialsJSON().then(tutorials => {
 ### Handling fetch errors
 * `fetch()` doesn't throw an error when the server returns a bad HTTP status, e.g. client errors (`400–499`) or server errors (`500–599`).
 
-| let's access a non-existing page '/oops' on the server. As expected, such request ends in a `404` response status:
-```typescript
+> let's access a non-existing page '/oops' on the server. As expected, such request ends in a `404` response status:
+```tsx
 async function fetchMovies404() {
   const response = await fetch('/oops');
   
@@ -60,7 +60,7 @@ async function fetchMovies404() {
 * `response.ok` property lets you distinguish good from bad HTTP response statuses. The property is set to true only if the response has status `200-299`.
 
 * To throw an error on a bad HTTP status (outside of the range `200-299`), check the value of `response.ok` property and throw an error manually:
-```ts
+```tsx
 async function fetchMoviesBadStatus() {
   const response = await fetch('/oops');
 

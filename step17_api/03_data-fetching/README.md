@@ -26,8 +26,8 @@ SWR *(stale-while-revalidate)* is a React Hooks library for data fetching, which
 
 * You need to install it first:
 
-| cmd
-```ts
+> cmd
+```bash
 npm i swr
 ```
 

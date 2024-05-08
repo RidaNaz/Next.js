@@ -12,7 +12,7 @@ import React, { createContext } from 'react';
 
 const MyContext = createContext(defaultValue); // Set a default value if needed
 ```
-[see step:01](./src/app/context.tsx)
+[view step:01](./src/app/context.tsx)
 
 #### Step 2: Provide Context Value
 Create a provider component to wrap the parts of your app that need access to the context.
@@ -34,7 +34,7 @@ function MyProvider({ children }) {
   );
 }
 ```
-[see step:02](./src/app/countProvider.tsx)
+[view step:02](./src/app/countProvider.tsx)
 
 #### Step 3: Consume Context Value
 Import the created context object (e.g., MyContext) into the components that need to access its value and Use the useContext hook to retrieve the context value.
@@ -49,7 +49,7 @@ function MyComponent() {
   // Use someState and setSomeState here
 }
 ```
-[see step:03](./src/app/page.tsx)
+[view step:03](./src/app/page.tsx)
 
 #### Step 4: Placement of the Provider
 Ideally, place the provider component near your application's root (e.g., `_app.js` or a `layout.tsx`) to make the context value accessible throughout the component tree.
@@ -69,6 +69,6 @@ export default function RootLayout({
   );
 }
 ```
-[see step:04](./src/app/layout.tsx)
+[view step:04](./src/app/layout.tsx)
 
-[see context API code(2)](./src/app//contextApi)
+[view context API code(2)](./src/app//contextApi)

@@ -1,5 +1,5 @@
 # Props
-Props is a special keyword in React that stands for properties and is used for passing data from one component to another. Props act as a mechanism for passing data (information) from **parent components** to their **child components**. They allow you to customize the **behavior** and **appearance** of child components based on the data provided by the parent component.
+Props is a special keyword in React that stands for ***properties*** and is used for passing data from one component to another. Props act as a mechanism for passing data *(information)* from **parent components** to their **child components**. They allow you to customize the **behavior** and **appearance** of child components based on the data provided by the parent component.
 
 **React Props are like function arguments in JavaScript and attributes in HTML.**
 
@@ -49,7 +49,7 @@ export default ChildComponent;
 * ## Render the props data.
 Finally, let's use these components in a Next.js page.
 
-```typescript
+```tsx
 // pages/index.js
 import React from 'react';
 import ParentComponent from '../components/ParentComponent';
@@ -67,7 +67,7 @@ export default HomePage;
 ```
 - The `ParentComponent` passes a message `prop` to the `ChildComponent`.
 - The `ChildComponent` receives the message `prop` and renders it within a paragraph `<p>`.
-- In the HomePage (a page component), we import and use the `ParentComponent`.
+- In the HomePage (a page component), I can import and use the `ParentComponent`.
 
 
 ### Note:

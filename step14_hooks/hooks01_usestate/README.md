@@ -36,4 +36,4 @@ function FavoriteColor() {
 - The second value, setColor, is the *function* that is used to *update our state*.
 - These *names are variables* that can be named anything you would like.
 
-[see code](/step14_hooks/hooks01_usestate/src/app/MyComponent.tsx)
+[view code](/step14_hooks/hooks01_usestate/src/app/MyComponent.tsx)

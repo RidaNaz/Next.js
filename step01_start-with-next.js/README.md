@@ -62,7 +62,6 @@ Open your package.json file and add the following scripts:
     "start": "next start",
     "lint": "next lint"
   }
-}
 ```
 These scripts refer to the different stages of developing an application:
 
@@ -75,7 +74,7 @@ These scripts refer to the different stages of developing an application:
 After installation, open the project in your code editor and navigate to `nextjs-dashboard`.
 
 > Command Prompt (cmd)
-```
+```bash
 cd nextjs-dashboard
 ```
 

@@ -9,7 +9,7 @@ Server Actions are ***asynchronous functions*** that are executed on the *server
 ## Server Components
 * Server Components can use *both* the ***inline function level*** or ***module level*** `use server` directive.
 * To inline a Server Action, add "use server" to the top of the function body:
-| Server Component
+> Server Component
 ```ts
 export default function Page() {
   // Server Action
@@ -28,7 +28,7 @@ export default function Page() {
 * Client Components can *only* import actions that use the ***module-level*** `use server` directive.
 * To call a Server Action in a Client Component, create a new file (with `.ts` or `.js` extension) and add the `use server` directive at the top of it.
 * All functions within the file will be marked as Server Actions that can be reused in *both* ***Client and Server Components*** :
-```ts
+```tsx
 'use server'
  
 export async function create() {
@@ -36,8 +36,8 @@ export async function create() {
 }
 ```
 
-| can be used in both client & server component
-```ts
+> can be used in both client & server component
+```tsx
 import { create } from '@/app/actions'
  
 export function Button() {
@@ -49,11 +49,11 @@ export function Button() {
 
 * You can also pass a Server Action to a Client Component as a ***prop***:
 
-```ts
+```tsx
 <ClientComponent updateItem={updateItem} />
 ```
 
-```ts
+```tsx
 'use client'
  
 export default function ClientComponent({ updateItem }) {

@@ -5,9 +5,9 @@ There are 3 different ways for styling Next.js application:
 * Clsx library
 
 ## Global Styles
-Every newly created Next.js project comes with a global.css stylesheet. You can use this file to add CSS rules to all the routes in your application - such as CSS reset rules, site-wide styles for HTML elements like links, and more.
-You can import `global.css` in any component in your application, but it's usually good practice to add it to your top-level component.
-Add global styles to your application by navigating to `/app/layout.tsx` and importing the `global.css` file:
+* Every newly created Next.js project comes with a `global.css` stylesheet. You can use this file to add CSS rules to all the routes in your application - such as CSS reset rules, site-wide styles for HTML elements like links, and more.
+* You can import `global.css` in any component in your application, but it's usually good practice to add it to your *top-level component*.
+* Add global styles to your application by navigating to `/app/layout.tsx` and importing the `global.css` file:
 
 > /app/layout.tsx
 ```typescript
@@ -39,9 +39,9 @@ export default function RootLayout({
 Tailwind is a CSS framework that speeds up the development process by allowing you to quickly write utility classes directly in your TSX markup.
 When you use `create-next-app` to start a new project, Next.js will ask if you want to use `Tailwind`. If you select `yes`, Next.js will automatically install the necessary packages and configure Tailwind in your application.
 
-In Tailwind, you style elements by adding class names. For example, adding the class "text-blue-500" will turn the <div> text blue:
+In Tailwind, you style elements by adding class names. For example, adding the class "text-blue-500" will turn the `<div>` text blue:
 > example
-```css
+```tsx
 <div className="text-blue-500">I'm blue!</div>
 ```
 
@@ -61,7 +61,7 @@ Inside `/app/ui`, create a new file called `home.module.css` and add the followi
 
 Then, inside your `/app/page.tsx` file import the styles and replace the Tailwind class names from the `<div>` you've added with styles.shape:
 > /app/page.tsx
-```css
+```tsx
 import styles from '@/app/ui/home.module.css';
 <div className={styles.shape} />;
 ```
@@ -75,7 +75,7 @@ Tailwind and CSS modules are the two most common ways of styling Next.js applica
 You can use clsx to conditionally apply the classes, like this:
 
 > /app/ui/invoices/status.tsx
-```typescript
+```tsx
 import clsx from 'clsx';
  
 export default function InvoiceStatus({ status }: { status: string }) {

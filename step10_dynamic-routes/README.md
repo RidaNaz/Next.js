@@ -36,4 +36,4 @@ In Next.js 14, a dynamic page refers to a web page that can *render different co
 * [Dynamic Routing with useParams](/step12_params/README.md#useparams-hook-client-side)
 * [API Routes with Data Fetching](/step12_params/README.md#filename-based-access-server-side)
 
-[see dynamic page code](/step10_dynamic-routes/src/app/products/[product]/page.tsx)
+[view dynamic page code](/step10_dynamic-routes/src/app/products/[product]/page.tsx)

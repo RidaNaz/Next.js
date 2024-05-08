@@ -17,13 +17,13 @@ In your `/app/ui` folder, create a new file called `fonts.ts`. You'll use this f
 Import the `Inter` font from the `next/font/google` module - this will be your primary font. Then, specify what subset you'd like to load. In this case, `'latin'`:
 
 > /app/ui/fonts.ts
-```typescript
+```tsx
 import { Inter } from 'next/font/google';
  export const inter = Inter({ subsets: ['latin'] });
 ```
 Finally, add the font to the <body> element in `/app/layout.tsx`:
 > /app/layout.tsx
-```typescript
+```tsx
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
  
@@ -42,7 +42,7 @@ export default function RootLayout({
 By adding `Inter` to the `<body>` element, the font will be applied throughout your application. Here, you're also adding the Tailwind `antialiased` class which smooths out the font. It's not necessary to use this class, but it adds a nice touch.
 
 # Image Optimization
-Next.js can serve static assets, like images, under the top-level /public folder. Files inside /public can be referenced in your application.
+Next.js can serve static assets, like images, under the top-level `/public` folder. Files inside `/public` can be referenced in your application.
 With regular HTML, you would add an image as follows:
 ```html
 <img
@@ -58,7 +58,7 @@ However, this means you have to manually:
 - Lazy load images that are outside the user's viewport.
 
 ### The `<Image>` component
-The `<Image>` Component is an extension of the HTML `<img>` tag, and comes with automatic image optimization, such as:
+The `<Image>` Component is an extension of the HTML `<img>` tag, and comes with *automatic image optimization*, such as:
 
 - Preventing layout shift automatically when images are loading.
 - Resizing images to avoid shipping large images to devices with a smaller viewport.
