@@ -2,7 +2,7 @@
 * Environment variables are values that can be accessed by an application without hard-coding them directly into the program.
 * They can be used to store sensitive information such as *database credentials or API keys or configuration values (base URLs, development / production flags)*.
 *  Environment variables can be defined in `.env.local` or `.env` files, loaded into the application.
-* You can also bundle environment variables for the ***browser*** by prefixing with `NEXT_PUBLIC_`.(go and see this in `.env` file)
+* You can also bundle environment variables for the ***browser*** by prefixing with `NEXT_PUBLIC_`. (go and see this in `.env` file)
 
 ## Different Types of Environment Variables:
 

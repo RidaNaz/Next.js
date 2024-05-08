@@ -83,13 +83,13 @@ Although you can use both routers in the same project, routes in app will be pri
 Create a public folder to store *static assets such as images, fonts, etc*. Files inside public directory can then be *referenced* by your code starting from the base URL ***(/)***.
 
 # Project Structures
-## Folder Structure of Next.js
+## Project Structure of Next.js
 
 Next.js is a framework built on top of React.js, designed to facilitate server-side rendering and static site generation. It's known for its 'convention over configuration'. Here's a typical Next.js folder structure:
 
 - **src/:**  *This is where most of the code lives. It typically contains subdirectories like components/, containers/, hooks/, utils/, and others.*
 
-- **pages/:**  *The heart of a Next.js application. Each TypeScript file under this directory becomes a route based on its file name. Example: pages/index.ts is the entry point (home page), and pages/about.ts would correspond to the /about route.*
+- **app/:**  *	App Router. The heart of a Next.js application.*
 
 - **public/:**  *This directory holds static files like images, fonts, and other assets. You can reference these files in your code starting from the base URL of your site.*
 
@@ -108,3 +108,4 @@ Next.js is a framework built on top of React.js, designed to facilitate server-s
 - **.env files:**  *For managing environment variables.*
 
 Next.js, with its opinionated structure, simplifies the process of setting up a server-rendered application.
+[Explore More...](https://nextjs.org/docs/getting-started/project-structure)

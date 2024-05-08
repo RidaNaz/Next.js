@@ -32,7 +32,7 @@ macOS, Windows (including WSL), and Linux are supported.
 ## Automatic Installation
 We recommend starting a new Next.js app using create-next-app, which sets up everything automatically for you. To create a project, run:
 
-> Command Prompt (cmd)
+> cmd
 ```bash
   npx create-next-app@latest
 ```
@@ -46,7 +46,7 @@ On installation, we'll see the some prompts. After the prompts, create-next-app 
 ## Manual Installation
 To manually create a new Next.js app, install the required packages:
 
-> Command Prompt (cmd)
+> cmd
 ```bash
   npm install next@latest react@latest react-dom@latest
 ```
@@ -73,7 +73,7 @@ These scripts refer to the different stages of developing an application:
 ## Exploring the Project
 After installation, open the project in your code editor and navigate to `nextjs-dashboard`.
 
-> Command Prompt (cmd)
+> cmd
 ```bash
 cd nextjs-dashboard
 ```
@@ -81,7 +81,7 @@ cd nextjs-dashboard
 ## Run the Development Server
 * Run the following command in terminal to start the development server.
 
-> Command Prompt (cmd)
+> cmd
 ```bash
 npm run dev
 ```
@@ -95,8 +95,36 @@ npm run dev
 * ### Development Environment (dev):
 For *local development* and testing.
 
+> cmd
+```bash
+npm run dev
+```
+or
+> cmd
+```bash
+yarn dev
+```
+
 * ### Production Environment (prod):
 For *deploying* the application to a live server.
+
+- To create a production build:
+> cmd
+```bash
+npm run build
+```
+
+- To start server in production mode:
+> cmd
+```bash
+npm start
+```
+
+- you can also run the build using the next command:
+>cmd
+```bash
+next start
+```
 
 * ### Staging Environment (staging):
 For *testing and verifying* changes before deploying to production.
