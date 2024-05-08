@@ -70,7 +70,7 @@ These scripts refer to the different stages of developing an application:
 - **start:**  runs next start to start a Next.js production server.
 - **lint:**  runs next lint to set up Next.js' built-in ESLint configuration.
 
-# Exploring the Project
+## Exploring the Project
 After installation, open the project in your code editor and navigate to `nextjs-dashboard`.
 
 > Command Prompt (cmd)
@@ -78,7 +78,7 @@ After installation, open the project in your code editor and navigate to `nextjs
 cd nextjs-dashboard
 ```
 
-# Run the Development Server
+## Run the Development Server
 * Run the following command in terminal to start the development server.
 
 > Command Prompt (cmd)
@@ -89,3 +89,14 @@ npm run dev
 * Visit http://localhost:3000 to view your application.
 
 * Edit `app/page.tsx` (or `pages/index.tsx`) file and save it to see the updated result in your browser.
+
+# Types of Environment
+
+* ### Development Environment (dev):
+For *local development* and testing.
+
+* ### Production Environment (prod):
+For *deploying* the application to a live server.
+
+* ### Staging Environment (staging):
+For *testing and verifying* changes before deploying to production.
