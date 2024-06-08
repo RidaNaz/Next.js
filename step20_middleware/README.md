@@ -7,11 +7,10 @@
 * It  is built on top of Vercel's Edge Functions, allowing code to run globally on Vercel’s Edge Network.
 * It runs before cached content and routes are matched. See [Matching Paths](https://nextjs.org/docs/app/building-your-application/routing/middleware#matching-paths) for more details.
 
-### Use Cases
-Enhance your app’s performance, security, and user experience with middleware:
+### | Use Cases | When Not to Use |
+|--------------- | -------------- |
 
-#### * Authentication and Authorization:
-Verify user identity and session cookies before granting access.
+| Authentication and Authorization: Verify user identity and session cookies before granting access. | Complex Data Fetching: Use Route Handlers or server-side utilities instead. |
 
 #### * Server-Side Redirects:
 Redirect based on conditions like locale or user role.
@@ -28,10 +27,9 @@ Capture request data for insights.
 #### * Feature Flagging:
 Enable or disable features seamlessly.
 
-### When Not to Use
+### 
 
-#### * Complex Data Fetching:
-Use Route Handlers or server-side utilities instead.
+#### * 
 
 #### * Heavy Computational Tasks:
 Keep middleware lightweight; offload heavy tasks to Route Handlers.
