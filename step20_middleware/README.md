@@ -10,36 +10,36 @@
 ### Use Cases
 Enhance your app’s performance, security, and user experience with middleware:
 
-#### Authentication and Authorization:
+#### * Authentication and Authorization:
 Verify user identity and session cookies before granting access.
 
-#### Server-Side Redirects:
+#### * Server-Side Redirects:
 Redirect based on conditions like locale or user role.
 
-#### Path Rewriting:
+#### * Path Rewriting:
 Support A/B testing, feature rollouts, or legacy paths dynamically.
 
-#### Bot Detection:
+#### * Bot Detection:
 Detect and block bot traffic.
 
-#### Logging and Analytics:
+#### * Logging and Analytics:
 Capture request data for insights.
 
-#### Feature Flagging:
+#### * Feature Flagging:
 Enable or disable features seamlessly.
 
 ### When Not to Use
 
-#### Complex Data Fetching:
+#### * Complex Data Fetching:
 Use Route Handlers or server-side utilities instead.
 
-#### Heavy Computational Tasks:
+#### * Heavy Computational Tasks:
 Keep middleware lightweight; offload heavy tasks to Route Handlers.
 
-#### Extensive Session Management:
+#### * Extensive Session Management:
 Use dedicated authentication services or Route Handlers.
 
-#### Direct Database Operations:
+#### * Direct Database Operations:
 Perform these within Route Handlers or server-side utilities.
 
 ## Creating Middleware in Next.js
@@ -77,6 +77,7 @@ matcher allows you to filter Middleware to run on specific paths.
 ```ts
 export const config = {
   matcher: '/about/:path*',
+
   // You can match a single path or multiple paths with an array syntax:
   matcher: ['/about/:path*', '/dashboard/:path*'],
 }
