@@ -8,7 +8,7 @@
 * It runs before cached content and routes are matched. See [Matching Paths](https://nextjs.org/docs/app/building-your-application/routing/middleware#matching-paths) for more details.
 
 ## Creating Middleware in Next.js
-### 1. Creating Middleware in Next.js
+### 1. Create `Middleware.ts` in Next.js
 Create a file named `middleware.ts` or `middleware.js` in the root of your project to define Middleware. For example, at the same level as `app`, or inside `src` folder.
 
 ### 2. Basic Middleware Example:
@@ -38,7 +38,7 @@ export const config = {
 ### 1. Matcher
 matcher allows you to filter Middleware to run on specific paths.
 
-| middleware.ts
+> middleware.ts
 ```ts
 export const config = {
   matcher: '/about/:path*',
@@ -51,7 +51,7 @@ export const config = {
 
 ### 2. Conditional statements
 
-| middleware.ts
+> middleware.ts
 ```ts
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
