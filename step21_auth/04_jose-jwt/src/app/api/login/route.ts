@@ -1,17 +1,30 @@
-import { createJWT } from '@/utils/jwt';
+import { NextRequest, NextResponse } from "next/server";
+import * as jose from "jose";
+import { cookies } from "next/headers";
 
-export default async function handler({req, res}:any) {
-  if (req.method === 'POST') {
-    const { username, password } = req.body;
+export const POST = async (request: NextRequest) => {
+  const body = await request.json().catch(() => null);
 
-    // Example credential check
-    if (username === 'user' && password === 'password') {
-      const token = await createJWT({ username });
-      return res.status(200).json({ token });
-    }
+  if (body.email === "admin" && body.password === "admin") {
+    const secret = new TextEncoder().encode(
+      process.env.JWT_SECRET
+    );
 
-    return res.status(401).json({ error: 'Invalid credentials' });
+    console.log("secret: ", secret);
+    const alg = "HS256";
+
+    const jwt = await new jose.SignJWT({ email: body.email })
+      .setProtectedHeader({ alg })
+      .setIssuedAt()
+      .setExpirationTime("2h")
+      .sign(secret);
+
+    cookies().set("token", jwt, {
+      httpOnly: true,
+    });
+
+    return NextResponse.json({ message: "Login success" });
   }
 
-  res.status(405).end();
-}
+  return NextResponse.json({ message: "Invalid Email or password" });
+};

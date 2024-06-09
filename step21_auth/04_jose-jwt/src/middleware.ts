@@ -1,23 +1,31 @@
-import { NextResponse } from 'next/server';
-import { verifyJWT } from './utils/jwt';
+import { cookies } from "next/headers";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import * as jose from "jose";
 
-export async function middleware(request:any) {
-  const authHeader = request.headers.get('authorization');
+// This function can be marked `async` if using `await` inside
+export async function middleware(request: NextRequest) {
+  let jwt = request.cookies.get("token")?.value;
 
-  if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return NextResponse.redirect(new URL('/login', request.url));
-  }
+  console.log("token: ", jwt);
 
-  const token = authHeader.split(' ')[1];
+  const secret = new TextEncoder().encode(
+    process.env.JWT_SECRET
+  );
 
-  try {
-    await verifyJWT(token);
-    return NextResponse.next();
-  } catch (error) {
-    return NextResponse.redirect(new URL('/login', request.url));
+  if (!jwt) {
+    return NextResponse.redirect("http://localhost:3000/login");
+  } else {
+    const { payload, protectedHeader } = await jose.jwtVerify(jwt, secret);
+    const headers = new Headers(request.headers);
+    headers.set("user", JSON.stringify(payload.email));
+
+    console.log(protectedHeader);
+    console.log(payload);
+    return NextResponse.next({
+      request: {
+        headers: headers,
+      },
+    });
   }
 }
-
-export const config = {
-  matcher: ['/protected/:path*'], // Protect all routes under /protected
-};
