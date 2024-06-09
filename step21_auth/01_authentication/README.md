@@ -22,7 +22,7 @@ Auth0 is a flexible, drop-in solution to add authentication and authorization se
 - Handles authentication, authorization, SSO, and more.
 - Provides extensive security features and integrations.
 
-#### 3. [Custom JWT (JSON Web Tokens) Authentication]()
+#### 3. [Custom JWT (JSON Web Tokens) Authentication](/step21_auth/04_jwt/README.md)
 JWT is a popular method for implementing stateless authentication.
 
 - Tokens are issued upon login and sent with each request.
