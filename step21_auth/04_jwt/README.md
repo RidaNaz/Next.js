@@ -23,7 +23,9 @@ In its compact form, JSON Web Tokens consist of three parts separated by dots (.
 - Therefore, a JWT typically looks like: `xxxxx.yyyyy.zzzzz`
 
 - The following shows a JWT that has the previous header and payload encoded, and it is signed with a secret.
+
 ![App Screenshot](https://cdn.auth0.com/content/jwt/encoded-jwt3.png)
 
 - If you want to play with JWT and put these concepts into practice, you can use jwt.io Debugger to decode, verify, and generate JWTs.
-1[App Screenshot](https://cdn.auth0.com/website/jwt/introduction/debugger.png)
+
+![App Screenshot](https://cdn.auth0.com/website/jwt/introduction/debugger.png)
