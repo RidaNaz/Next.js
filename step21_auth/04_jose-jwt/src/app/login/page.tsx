@@ -16,9 +16,9 @@ export default function Login() {
       body: JSON.stringify({ username, password }),
     });
 
-    const data = await response.json();
+    const data = await response.json().catch(() => null);;
 
-    if (response.ok) {
+    if (response.ok || !data) {
       localStorage.setItem('token', data.token); // Store the token
       window.location.href = '/protected'; // Redirect to protected page
     } else {

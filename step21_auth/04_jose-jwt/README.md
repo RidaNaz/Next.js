@@ -5,14 +5,13 @@ JWT is a compact, URL-safe means of representing claims to be transferred betwee
 - ***Authentication:*** Verifying the identity of users by generating and validating tokens.
 - ***Authorization:*** Controlling access to resources and routes based on the user's role or permissions.
 
-![App Screenshot](/step21_auth/04_jwt/public/jwt.png)
+![App Screenshot](/step21_auth/04_jose-jwt/public/jwt.png)
 
 By using JWT, Next.js applications can maintain secure, stateless sessions, improving performance and scalability.
 
 ### Structure of a JWT
 
-![App Screenshot](/step21_auth/04_jwt/public/jwt-structure.png)
-
+![App Screenshot](/step21_auth/04_jose-jwt/public/jwt-structure.png)
 In its compact form, JSON Web Tokens consist of three parts separated by dots (.):
 
 ![App Screenshot](https://cdn.auth0.com/content/jwt/encoded-jwt3.png)
