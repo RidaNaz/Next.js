@@ -22,7 +22,7 @@ The API management platform functions as the **control center**, overseeing the 
 API security services form the **protective layer**, ensuring the security and safeguarding of data and communication.
 
 ## Types of API Architecture
- When it comes to web services, there are various types of APIs available, including *REST, GraphQL, gRPC and SOAP*. While these terms represent different **architectural styles** and have distinct characteristics. We use Rest API in our course that is *Rest API*.
+ When it comes to web services, there are various types of APIs available, including *REST, GraphQL, gRPC and SOAP*. While these terms represent different **architectural styles** and have distinct characteristics. We use *Rest API* in our course.
 
 ### REST API
 * REST *(Representational State Transfer)* is an architectural style that makes a connection between the client and the server and as soon as the server responds, it closes the connection.
