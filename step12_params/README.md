@@ -1,8 +1,8 @@
 # Params
 In Next.js, parameters (often referred to as `params`) are used in dynamic routes to capture segments of a URL and pass them as props to your page components. This allows you to create dynamic pages that can respond to different URL patterns.
 
-* *Param is an object with property and value:*
-   * *Property of Params is the name of Dynamic page.*
+* *Param is an object with key and value:*
+   * *key of Params is the name of Dynamic page.*
    * *Value of Params is the location(URL path) of Dynamic page.*
 
 Here's a breakdown of how `params` work in Next.js 14:
